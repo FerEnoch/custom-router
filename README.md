@@ -1,6 +1,8 @@
 
-## Custom-react-router
+## Custom-react-router: 3elements-router
 Parte del curso de React basado en proyectos de  [MiduDev](https://github.com/midudev/aprendiendo-react/tree/master/projects/07-midu-router)
+
+### Encuéntralo en npm registry como 3elements-router
 
 ### Consigna:
 Crea un React Router desde cero y publicar el paquete en NPM
@@ -16,5 +18,5 @@ Crea un React Router desde cero y publicar el paquete en NPM
  [x] Componente para hacerlo declarativo\
  [x] Lazy Loading de las rutas\
  [x] Hacer un i18n con las rutas\
- [] Testing\
- [] Publicar el paquete en NPM\
+ [X] Testing\
+ [x] Publicar el paquete en NPM\

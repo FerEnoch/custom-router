@@ -1,13 +1,12 @@
 import { useEffect, useState, Children } from 'react'
 import { NAVIGATION_EVENTS } from './events'
-import Page404 from '../pages/Page404'
 import { match } from 'path-to-regexp'
-import { getCurrentPath } from '../utils'
+import { getCurrentPath } from './utils'
 
 export default function Router ({
   children,
   routes = [],
-  defaultComponent: DefaultComponent = Page404
+  defaultComponent: DefaultComponent = () => <h1>404</h1>
 }) {
   const [currentPath, setCurrentPath] = useState(getCurrentPath())
 

@@ -1,18 +1,30 @@
 {
-  "name": "custom-router",
-  "private": true,
-  "version": "0.0.0",
+  "name": "3elements-router",
+  "private": false,
+  "version": "0.0.2",
   "type": "module",
+  "main": "lib/navigation/index.js",
+  "module": "lib/navigation/index.js",
+  "exports": {
+    ".": {
+      "import": "./lib//navigation/index.js",
+      "require": "./lib//navigation//index.js"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "test": "vitest",
-    "vitest:ui": "vitest --ui"
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui",
+    "prepare": "npm run test && swc ./src/navigation/*.jsx -d lib && rm lib/navigation/*.test.* && cp -r src/navigation/*.js lib/navigation"
   },
   "dependencies": {
-    "path-to-regexp": "6.2.1",
+    "path-to-regexp": "6.2.1"
+  },
+  "peerDependencies": {
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },

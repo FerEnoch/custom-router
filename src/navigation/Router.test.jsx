@@ -3,10 +3,10 @@ import { beforeEach, describe, expect, it, vi } from 'vitest'
 import Router from './Router'
 import Route from './Route'
 
-import { getCurrentPath } from '../utils'
+import { getCurrentPath } from './utils.js'
 import Link from './Link'
 
-vi.mock('../utils.js', () => ({
+vi.mock('./utils.js', () => ({
   getCurrentPath: vi.fn()
 }))
 
