@@ -1,5 +1,5 @@
 import { MOUSE_BUTTONS, NAVIGATION_EVENTS } from './events'
-import { PropTypes } from 'prop-types'
+// import { PropTypes } from 'prop-types'
 
 function navigate (href) {
   // Aquí le decimos que sólo cambie la URL,
@@ -12,11 +12,11 @@ function navigate (href) {
   window.dispatchEvent(navgiationEvent)
 }
 
-Link.propTypes = {
-  target: PropTypes.string,
-  to: PropTypes.string.isRequired,
-  resetScroll: PropTypes.bool
-}
+// Link.propTypes = {
+//   target: PropTypes.string,
+//   to: PropTypes.string.isRequired,
+//   resetScroll: PropTypes.bool
+// }
 
 export default function Link ({ target, to, resetScroll, ...props }) {
   const handleClick = (event) => {
