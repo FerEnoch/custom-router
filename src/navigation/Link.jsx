@@ -18,7 +18,7 @@ function navigate (href) {
 //   resetScroll: PropTypes.bool
 // }
 
-export default function Link ({ target, to, resetScroll, ...props }) {
+export function Link ({ target, to, resetScroll, ...props }) {
   const handleClick = (event) => {
     const isMainEvent = event.button === MOUSE_BUTTONS.PRIMARY // primary click
     const isModifiedEvent = event.metaKey || event.altKey || event.ctrlKey || event.shiftKey

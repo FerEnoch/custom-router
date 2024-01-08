@@ -1,15 +1,16 @@
 {
   "name": "3elements-router",
   "private": false,
-  "version": "0.0.3",
+  "version": "0.0.5",
   "type": "module",
   "main": "lib/navigation/index.js",
   "module": "lib/navigation/index.js",
   "exports": {
     ".": {
       "import": "./lib//navigation/index.js",
-      "require": "./lib//navigation//index.js"
-    }
+      "require": "./lib//navigation/index.js"
+    },
+    "./package.json": "./package.json"
   },
   "scripts": {
     "dev": "vite",

@@ -1,4 +1,4 @@
-import Link from '../navigation/Link'
+import { Link } from '../navigation'
 
 const i18n = {
   es: {

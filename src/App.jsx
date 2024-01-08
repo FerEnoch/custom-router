@@ -1,10 +1,9 @@
 // import { HomePage } from './pages/HomePage'
 // import { AboutPage } from './pages/AboutPage' // import estático
-import Router from './navigation/Router'
 import Page404 from './pages/Page404'
-import Route from './navigation/Route'
 import SearchPage from './pages/SearchPage'
 import { Suspense, lazy } from 'react'
+import { Router, Route } from './navigation'
 
 const LazyAboutPage = lazy(() => import('./pages/AboutPage.jsx')) // import dinámico
 const LazyHomePage = lazy(() => import('./pages/HomePage.jsx'))

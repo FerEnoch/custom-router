@@ -3,7 +3,7 @@ import { NAVIGATION_EVENTS } from './events'
 import { match } from 'path-to-regexp'
 import { getCurrentPath } from './utils'
 
-export default function Router ({
+export function Router ({
   children,
   routes = [],
   defaultComponent: DefaultComponent = () => <h1>404</h1>

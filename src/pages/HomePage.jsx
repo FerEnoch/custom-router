@@ -1,4 +1,4 @@
-import Link from '../navigation/Link'
+import { Link } from '../navigation'
 
 export default function HomePage () {
   return (
